@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.summary          = 'CloudKit synchronization for your Core Data or Realm model.'
 
   s.description      = <<-DESC
-SyncKit automates the process of synchronizing your Core Data/Realm models using CloudKit. It can easily be plugged into (and removed from) your existing stack.
+New SyncKit automates the process of synchronizing your Core Data/Realm models using CloudKit. It can easily be plugged into (and removed from) your existing stack.
                        DESC
 
   s.homepage         = 'https://github.com/mentrena/SyncKit'
