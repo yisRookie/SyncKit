@@ -50,7 +50,7 @@ end
 s.subspec 'RealmSwift' do |cs|
 	cs.dependency 'SyncKit/Core'
 	cs.dependency 'Realm'
-	cs.dependency 'RealmSwift'
+	cs.dependency 'RealmSwift','~> 20.0.5'
 	cs.source_files = 'SyncKit/Classes/RealmSwift/*.swift'
 end
 
