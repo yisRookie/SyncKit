@@ -22,7 +22,7 @@ SyncKit automates the process of synchronizing your Core Data/Realm models using
   s.swift_version    = '5.0'
   s.module_name		 = 'SyncKit'
 
-s.ios.deployment_target = '13.0'
+s.ios.deployment_target = '15.0'
 s.osx.deployment_target = '10.12'
 s.watchos.deployment_target = '3.0'
 
@@ -49,8 +49,8 @@ end
 
 s.subspec 'RealmSwift' do |cs|
 	cs.dependency 'SyncKit/Core'
-	cs.dependency 'Realm', '~> 10.5'
-	cs.dependency 'RealmSwift', '~> 10.5'
+	cs.dependency 'Realm'
+	cs.dependency 'RealmSwift'
 	cs.source_files = 'SyncKit/Classes/RealmSwift/*.swift'
 end
 
