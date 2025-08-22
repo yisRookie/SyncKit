@@ -12,7 +12,7 @@ import SyncKit
 class QSEmployee: Object, PrimaryKey, ParentKey {
 
     @objc dynamic var name: String? = ""
-    let sortIndex = RealmOptional<Int>()
+    let sortIndex = RealmProperty<Int?>()
     @objc dynamic var identifier = ""
     @objc dynamic var photo: Data? = nil
     

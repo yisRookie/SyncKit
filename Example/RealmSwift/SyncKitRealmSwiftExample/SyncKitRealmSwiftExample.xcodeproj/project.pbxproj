@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -148,6 +148,7 @@
 		64E38CA6267F9D160077DC9B /* SyncKitRealmSwiftExample copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SyncKitRealmSwiftExample copy-Info.plist"; path = "/Users/manuel/Documents/Apps/iOS/SyncKit/Example/RealmSwift/SyncKitRealmSwiftExample/SyncKitRealmSwiftExample copy-Info.plist"; sourceTree = "<absolute>"; };
 		64EB18B926AEB71A00F0BB5C /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = ../../../../Common/Model/Identifier.swift; sourceTree = "<group>"; };
 		77B18CD36C08F968589DB831 /* Pods_SyncKitRealmSwiftExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SyncKitRealmSwiftExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD65FC82E584348006DC35F /* SyncKitRealmSwiftExampleDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SyncKitRealmSwiftExampleDebug.entitlements; sourceTree = "<group>"; };
 		884263D9F4B4798C54B50C85 /* Pods-SyncKitRealmSwiftExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyncKitRealmSwiftExampleTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-SyncKitRealmSwiftExampleTests/Pods-SyncKitRealmSwiftExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F7025A2C749EC652E7B0908 /* Pods-SyncKitRealmSwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyncKitRealmSwiftExample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-SyncKitRealmSwiftExample/Pods-SyncKitRealmSwiftExample.release.xcconfig"; sourceTree = "<group>"; };
 		9138DEA549B0FDC946BD0398 /* Pods-SyncKitCoreDataExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyncKitCoreDataExampleTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-SyncKitCoreDataExampleTests/Pods-SyncKitCoreDataExampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -213,6 +214,7 @@
 		640C33B822AC48C700A85508 /* SyncKitRealmSwiftExample */ = {
 			isa = PBXGroup;
 			children = (
+				7BD65FC82E584348006DC35F /* SyncKitRealmSwiftExampleDebug.entitlements */,
 				6492365822C406510074A142 /* SyncKitRealmSwiftExample.entitlements */,
 				64B46C1322BCE86B0017268F /* Employee */,
 				64B46C0022BCD9A30017268F /* Company */,
@@ -517,9 +519,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SyncKitRealmSwiftExample/Pods-SyncKitRealmSwiftExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SyncKitRealmSwiftExample/Pods-SyncKitRealmSwiftExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -768,15 +774,16 @@
 			baseConfigurationReference = F644EFCC06713DC321A3F9FB /* Pods-SyncKitRealmSwiftExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = SyncKitRealmSwiftExample/SyncKitRealmSwiftExample.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SyncKitRealmSwiftExample/SyncKitRealmSwiftExampleDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2UHP7K87SQ;
+				DEVELOPMENT_TEAM = 9CKQT94YFS;
 				INFOPLIST_FILE = SyncKitRealmSwiftExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mentrena.SyncKitRealmSwiftExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redforestfarm.books;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -790,8 +797,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SyncKitRealmSwiftExample/SyncKitRealmSwiftExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2UHP7K87SQ;
+				DEVELOPMENT_TEAM = 9CKQT94YFS;
 				INFOPLIST_FILE = SyncKitRealmSwiftExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

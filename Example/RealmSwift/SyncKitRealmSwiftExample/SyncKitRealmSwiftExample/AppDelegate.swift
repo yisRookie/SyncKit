@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var settingsViewController: SettingsViewController?
     
     var synchronizer: CloudKitSynchronizer?
-    lazy var sharedSynchronizer = CloudKitSynchronizer.sharedSynchronizer(containerName: "your-iCloud-container", configuration: self.realmConfiguration)
+    lazy var sharedSynchronizer = CloudKitSynchronizer.sharedSynchronizer(containerName: "iCloud.com.redforestfarm.HealthyNotes", configuration: self.realmConfiguration)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func loadSyncKit() {
         if settingsManager.isSyncEnabled {
-            synchronizer = CloudKitSynchronizer.privateSynchronizer(containerName: "your-iCloud-container", configuration: self.realmConfiguration)
+            synchronizer = CloudKitSynchronizer.privateSynchronizer(containerName: "iCloud.com.redforestfarm.HealthyNotes", configuration: self.realmConfiguration)
         }
     }
     

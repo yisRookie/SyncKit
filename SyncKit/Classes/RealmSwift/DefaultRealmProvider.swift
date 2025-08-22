@@ -91,16 +91,16 @@ public class DefaultRealmProvider: NSObject, AdapterProvider {
     
     private func realmSwiftAdapterFor(targetRealmURL: URL, persistenceRealmURL: URL, zoneID: CKRecordZone.ID) -> RealmSwiftAdapter {
         
-        let targetConfiguration = Realm.Configuration(fileURL: targetRealmURL,
-                                                      inMemoryIdentifier: self.realmConfiguration.inMemoryIdentifier,
-                                                      syncConfiguration: self.realmConfiguration.syncConfiguration,
-                                                      encryptionKey: self.realmConfiguration.encryptionKey,
-                                                      readOnly: self.realmConfiguration.readOnly,
-                                                      schemaVersion: self.realmConfiguration.schemaVersion,
-                                                      migrationBlock: self.realmConfiguration.migrationBlock,
-                                                      deleteRealmIfMigrationNeeded: self.realmConfiguration.deleteRealmIfMigrationNeeded,
-                                                      shouldCompactOnLaunch: self.realmConfiguration.shouldCompactOnLaunch,
-                                                      objectTypes: self.realmConfiguration.objectTypes)
+        let targetConfiguration = Realm.Configuration(
+            fileURL: targetRealmURL,
+            inMemoryIdentifier: self.realmConfiguration.inMemoryIdentifier,
+            encryptionKey: self.realmConfiguration.encryptionKey,
+            readOnly: self.realmConfiguration.readOnly,
+            schemaVersion: self.realmConfiguration.schemaVersion,
+            migrationBlock: self.realmConfiguration.migrationBlock,
+            shouldCompactOnLaunch: self.realmConfiguration.shouldCompactOnLaunch,
+            objectTypes: self.realmConfiguration.objectTypes
+        )
         
         var persistenceConfiguration = RealmSwiftAdapter.defaultPersistenceConfiguration()
         persistenceConfiguration.fileURL = persistenceRealmURL

@@ -1,33 +1,39 @@
 PODS:
-  - Realm (10.8.0):
-    - Realm/Headers (= 10.8.0)
-  - Realm/Headers (10.8.0)
-  - RealmSwift (10.8.0):
-    - Realm (= 10.8.0)
-  - SyncKit/Core (1.2.0)
-  - SyncKit/RealmSwift (1.2.0):
-    - Realm (~> 10.5)
-    - RealmSwift (~> 10.5)
+  - Realm (20.0.3):
+    - Realm/Headers (= 20.0.3)
+  - Realm/Headers (20.0.3)
+  - RealmSwift (20.0.3):
+    - Realm (= 20.0.3)
+  - SmartCodable (5.1.2):
+    - SmartCodable/Core (= 5.1.2)
+  - SmartCodable/Core (5.1.2)
+  - SyncKit/Core (1.3.3)
+  - SyncKit/RealmSwift (1.3.3):
+    - Realm
+    - RealmSwift (~> 20.0.0)
     - SyncKit/Core
 
 DEPENDENCIES:
   - RealmSwift
+  - SmartCodable
   - SyncKit/RealmSwift (from `../../`)
 
 SPEC REPOS:
   trunk:
     - Realm
     - RealmSwift
+    - SmartCodable
 
 EXTERNAL SOURCES:
   SyncKit:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  Realm: ad3c5cd762e5a5bc02080fc55aa04a0e43f98575
-  RealmSwift: 316e450478fb01e06ece4438dda42f407c5f51d2
-  SyncKit: e6689096a52892a52900f9e12107f95fed82adb2
+  Realm: 853e5089d6042dff807bda000277eadfe2da93d2
+  RealmSwift: f33c19577cefcbf681345d721fcbc7b42be4c949
+  SmartCodable: 545dd052990fe7e80085463b79a1a5e462ee29ff
+  SyncKit: 7bfdbdad3b96fb411ad59c1c7ee5ac2b18183430
 
-PODFILE CHECKSUM: 8a9b1d6bab3f4c216d116fba4fb411212aa43843
+PODFILE CHECKSUM: 9cbfd9019a5dd67ed211b5d8c7fbfb2bd11b959f
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.15.2

@@ -8,12 +8,13 @@
 
 import RealmSwift
 import SyncKit
+import SmartCodable
 
 class QSCompany: Object, PrimaryKey {
     
-    @objc dynamic var name: String? = ""
+    @objc dynamic var name: String? = nil
     @objc dynamic var identifier = ""
-    let sortIndex = RealmOptional<Int>()
+    let sortIndex = RealmProperty<Int?>()
     
     let employees = LinkingObjects(fromType: QSEmployee.self, property: "company")
     
@@ -21,4 +22,12 @@ class QSCompany: Object, PrimaryKey {
         
         return "identifier"
     }
+    
+    // 必须实现一个空的初始化方法
+//    required override init() {}
+//    
+//    enum CodingKeys: String, CodingKey {
+//            case name, identifier, sortIndex
+//            // employees 不参与
+//        }
 }
